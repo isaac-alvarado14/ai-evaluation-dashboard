@@ -5,16 +5,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>AI Evaluation Dashboard</h1>
 
-  <p>This project is a simple dashboard for reviewing and rating AI-generated responses.</p>
-  <button onclick="showEvaluation()">View Rating</button>
+  <div class="dashboard">
+    <h1>AI Evaluation Dashboard</h1>
+    <p class="intro">A simple dashboard for reviewing and rating AI-generated responses.</p>
 
-  <h2>Sample Evaluation</h2>
-  <p><strong>Prompt:</strong> Explain what HTML is.</p>
-  <p><strong>AI Response:</strong> HTML is the language used to structure web pages.</p>
-  <p><strong>Rating:</strong> 4/5</p>
-  <p><strong>Feedback:</strong> The answer is clear and accurate, but it could include a little more detail.</p>
+    <div class="stats">
+      <div class="card">
+        <h2>12</h2>
+        <p>Responses Reviewed</p>
+      </div>
+
+      <div class="card">
+        <h2>4.3/5</h2>
+        <p>Average Rating</p>
+      </div>
+
+      <div class="card">
+        <h2>3</h2>
+        <p>Needs Improvement</p>
+      </div>
+    </div>
+
+    <div class="evaluation">
+      <h2>Sample Evaluation</h2>
+
+      <p><strong>Prompt:</strong> Explain what HTML is.</p>
+      <p><strong>AI Response:</strong> HTML is the language used to structure web pages.</p>
+      <p><strong>Rating:</strong> 4/5</p>
+      <p><strong>Feedback:</strong> The answer is clear and accurate, but it could include a little more detail.</p>
+
+      <button onclick="showEvaluation()">View Rating</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
